@@ -1,6 +1,17 @@
 <html>
-<h1>Welcome to blog</h1>
-{% for post in posts.all %}
-  {{post.title}}<br>
-{% endfor %}
+  <head>
+    <title>Fahad's Blog</title>
+  </head>
+  <body>
+    <center><h1>Welcome to Blog</h1></center>
+    {% for post in posts.all %}
+      <br>
+      <div>
+        <u><h2>{{post.title}}</h2></u>
+        <b>Published on:</b> <a>{{post.addDate}}</a>
+        <p>{{post.content}}</p>
+      </div>
+    {% endfor %}
+  </body>
+
 </html>
