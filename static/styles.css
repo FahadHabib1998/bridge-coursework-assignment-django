@@ -1,5 +1,5 @@
 body {
-  background-color: powderblue;
+  background-color: slategray;
 }
 
 h1   {
@@ -8,4 +8,14 @@ h1   {
 
 p    {
   color: red;
+}
+
+button {
+  border-style: solid;
+  border-color: black;
+  background-color: orange;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
 }
