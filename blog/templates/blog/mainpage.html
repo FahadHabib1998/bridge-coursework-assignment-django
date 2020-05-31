@@ -1,6 +1,7 @@
 <html>
     {% load static %}
     <head>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
         <title>Fahad's Page</title>
     </head>
     <body>
@@ -13,10 +14,11 @@
        </center>
      </div>
      <div>
-       <h2><a href="{% url 'blogpage' %}">Blog</a></h2>
+       <button><a href="{% url 'blogpage' %}">Blog</a></button>
      </div>
+     <br>
      <div>
-       <h2><a href="">CV</a></h2>
+       <button><a href="">CV</a></button>
      </div>
-    </body>
+   </body>
 </html>

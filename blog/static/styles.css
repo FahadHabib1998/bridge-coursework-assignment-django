@@ -1,0 +1,21 @@
+body {
+  background-color: slategray;
+}
+
+h1   {
+  color: orange;
+}
+
+p    {
+  color: red;
+}
+
+button {
+  border-style: solid;
+  border-color: black;
+  background-color: orange;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
