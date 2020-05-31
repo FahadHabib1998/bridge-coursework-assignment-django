@@ -5,20 +5,18 @@
         <title>Fahad's Page</title>
     </head>
     <body>
-      <div>
-        <center>
-          <img src = "{% static 'mainpic.jpg' %}" height = 300></img>
-          <h1>Welcome to Fahad's Page</h1>
-          <strong> An undergraduate student at The University of Birmingham pursuing "BSc Artificial Intelligence and Computer Science with an year in industry". </strong>
-         <br><strong> Currently on an year placement as "Software Developer" in Vistair Bristol. </strong>
-       </center>
-     </div>
-     <div>
-       <button><a href="{% url 'blogpage' %}">Blog</a></button>
-     </div>
-     <br>
-     <div>
-       <button><a href="">CV</a></button>
-     </div>
+      <center>
+        <div>
+            <img src = "{% static 'mainpic.jpg' %}" height = 300></img>
+            <h1>Welcome to Fahad's Page</h1>
+            <strong> An undergraduate student at The University of Birmingham pursuing "BSc Artificial Intelligence and Computer Science with an year in industry". </strong>
+           <br><strong> Currently on an year placement as "Software Developer" in Vistair Bristol. </strong>
+
+       </div>
+       <div class = "row">
+         <button><a href="{% url 'blogpage' %}">Blog</a></button>
+         <button><a href="">CV</a></button>
+       </div>
+    </center>
    </body>
 </html>
