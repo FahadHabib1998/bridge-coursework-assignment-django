@@ -1,9 +1,11 @@
 <html>
+  {% load static %}
   <head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
     <title>Fahad's Blog</title>
   </head>
   <body>
-    <center><h1>Welcome to Blog</h1></center>
+    <center><h1>Welcome to My Blog</h1></center>
     {% for post in posts.all %}
       <br>
       <div>
