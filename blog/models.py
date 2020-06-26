@@ -24,7 +24,7 @@ class CVElem(models.Model):
         default = '1'
         )
     name = models.CharField(max_length=100)
-    emplyInti = models.CharField(max_length=100, blank = True)
+    emplyInti = models.CharField(max_length=100, blank = True, null=True)
     fromDate = models.DateField(blank=True, null=True)
     toDate = models.CharField(max_length= 50, blank=True)
     description =  models.TextField(null=True)
