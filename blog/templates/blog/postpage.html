@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% load static %}
+  <head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="grayheader">
+      <h1>{{ post.title }}</h1>
+    </div>
+    <div>
+      <p><b>Published Date:</b> {{post.addDate}}</p>
+      <div class="blogtext">
+        <p>{{post.content|linebreaks}}</p>
+      </div>
+    </div>
+  </body>
+</html>

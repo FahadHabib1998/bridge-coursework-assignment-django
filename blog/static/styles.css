@@ -1,10 +1,24 @@
-body {
-  background-color: slategray;
-}
-
 h1   {
+  margin-top: 50px;
+  font-size: 40px;
   color: orange;
 }
+
+.whiteh2 {
+  text-decoration: underline;
+  color: white;
+}
+
+strong {
+  margin-top: 50px;
+  font-size: 20px;
+  color: white;
+}
+
+.blogtext {
+  line-height:2;
+}
+
 
 button {
   border-style: solid;
@@ -19,6 +33,63 @@ button {
   margin-left: 100px;
 }
 
+.graybody {
+  background-color: slategray;
+}
+
+.grayheader {
+  padding: 60px;
+  text-align: center;
+  background: slategray;
+  width: 100%;
+}
+
+
 .row {
   white-space: nowrap;
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 50px;
+
+}
+
+.cvbox {
+  background-color: rgb(243,168,60,0.5);
+  padding: 14px 28px;
+  display: inline-block;
+  margin-top: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+
+}
+
+.cvelembox {
+    background-color: rgb(115,128,143,0.4);
+    padding: 14px 28px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.cvline {
+
+  margin-top: 0px;
+  width: 100%;
+
+}
+
+.plus {
+  display:inline-block;
+  width:50px;
+  height:50px;
+
+  background:orange;
+  background-position:center;
+  background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+}
+
+.radius {
+  border-radius:50%;
 }

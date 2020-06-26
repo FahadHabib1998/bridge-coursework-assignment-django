@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title> Education </title>
+  </head>
+  <body>
+    <div class="grayheader">
+      <h1> Education </h1>
+    </div>
+
+    <div>
+      {% for data in datas.all %}
+        {% if data.type == "2" %}
+          <div class="cvelembox">
+            <h2>{{data.name}}</h2>
+            <p>{{data.emplyInti}}</p>
+            <div class="row">
+              <b>From:</b>
+              <p>{{data.fromDate}}</p>
+            </div>
+            <div class="row">
+              <b>To:</b>
+              <p>{{data.toDate}}</p>
+            </div>
+            <p>{{data.description|linebreaks}}</p>
+            {% if user.is_authenticated %}
+            <div class="plus radius" id = "eduedit"><a href="{% url 'editcvelem' pk=data.pk %}">
+              <center>
+                <p>&#9998;</p>
+              </center>
+            </a></div>
+            <div class="plus radius" id = "edudelete"><a href="{% url 'deleteelem' pk=data.pk %}">
+              <center>
+              <p>&#10540;</p>
+            </center>
+            </a></div>
+            {% endif %}
+          </div>
+          <hr class="cvline" size="4" color="orange">
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </body>
+</html>

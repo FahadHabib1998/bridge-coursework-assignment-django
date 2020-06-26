@@ -1,5 +1,30 @@
 <html>
-<head>
-<title>hello</title>
-</head>
-<body><h1> Welcome to CV </h1></body></html>
+  {% load static %}
+  <head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Fahad's CV</title>
+  </head>
+  <body class="graybody">
+    <center>
+    <h1> Fahad Habib Al Waheedi </h1>
+      <div class = "cvbox" id = "wrkexpbutton"><a href="{% url 'cvwork' %}">
+        <img src = "{% static 'workexp.jpg' %}" height = 200>
+        <h2> Work Experience </h2>
+      </a></div>
+      <div class = "cvbox" id = "edu"><a href="{% url 'cvedu' %}">
+        <img src = "{% static 'education.jpg' %}" height = 200>
+        <h2> Education </h2>
+      </a></div>
+      <div class = "cvbox" id = "prj"><a href="{% url 'cvproj' %}">
+        <img src = "{% static 'project.jpg' %}" height = 200>
+        <h2> Projects </h2>
+      </a></div>
+      {% if user.is_authenticated %}
+      <div class="plus radius" id="secretbutton">
+        <a href="{% url 'addnew' %}">
+        <p>&#43;</p>
+      </a></div>
+      {% endif %}
+  </center>
+  </body>
+</html>
