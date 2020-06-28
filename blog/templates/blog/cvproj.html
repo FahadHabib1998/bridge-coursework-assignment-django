@@ -3,6 +3,7 @@
   {% load static %}
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fredericka+the+Great&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
     <title> Projects </title>
   </head>
@@ -16,7 +17,6 @@
         {% if data.type == "3" %}
           <div class="cvelembox">
             <h2>{{data.name}}</h2>
-            <p>{{data.emplyInti}}</p>
             <p>{{data.description|linebreaks}}</p>
             {% if user.is_authenticated %}
             <div class="plus radius" id = "prjedit"><a href="{% url 'editcvelem' pk=data.pk %}">

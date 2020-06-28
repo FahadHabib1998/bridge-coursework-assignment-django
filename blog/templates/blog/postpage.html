@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   {% load static %}
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fredericka+the+Great&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
     <meta charset="utf-8">
     <title></title>
@@ -10,11 +11,9 @@
     <div class="grayheader">
       <h1>{{ post.title }}</h1>
     </div>
-    <div>
-      <p><b>Published Date:</b> {{post.addDate}}</p>
       <div class="blogtext">
+        <p><b>Published Date:</b> {{post.addDate}}</p>
         <p>{{post.content|linebreaks}}</p>
       </div>
-    </div>
   </body>
 </html>
