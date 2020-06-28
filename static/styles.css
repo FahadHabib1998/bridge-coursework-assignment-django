@@ -1,8 +1,18 @@
 h1   {
   margin-top: 50px;
   font-size: 40px;
-  font-family: 'Bangers', cursive;
+  font-family: 'Fredericka the Great', cursive;
   color: orange;
+}
+
+.mainwhite {
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  color: white;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
 }
 
 .whiteh2 {
@@ -10,14 +20,10 @@ h1   {
   color: white;
 }
 
-strong {
-  margin-top: 50px;
-  font-size: 20px;
-  color: white;
-}
 
 .blogtext {
   line-height:2;
+  font-family: 'Oswald', sans-serif;
 }
 
 
@@ -26,8 +32,9 @@ button {
   border-color: black;
   background-color: orange;
   padding: 14px 28px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
+  font-family: 'Amatic SC', cursive;
   display: inline-block;
   margin-top: 100px;
   margin-right: 100px;
