@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from secretelem import HIDDEN_KEY
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tf1f*-&x&&)i(%t7c0yk2xi(8so$t3x6bpe7uequr80tx%_@dy'
+SECRET_KEY = HIDDEN_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
