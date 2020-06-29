@@ -12,6 +12,7 @@ h1   {
 }
 
 h2 {
+  font-size: 30px;
   font-family: 'Amatic SC', cursive;
 }
 
@@ -77,6 +78,7 @@ button {
     display: inline-block;
     margin-top: 25px;
     margin-bottom: 0px;
+    font-family: 'Oswald', sans-serif;
     width: 100%;
 }
 

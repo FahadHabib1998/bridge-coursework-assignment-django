@@ -14,5 +14,6 @@ urlpatterns = [
     path('cv/education/', views.cvedu, name = 'cvedu'),
     path('cv/project/', views.cvproj, name = 'cvproj'),
     path('cv/remove/<int:pk>', views.deleteelem, name='deleteelem'),
-    path('accounts/login/', views.gotoadmin, name = 'gotoadmin' )
+    path('accounts/login/', views.gotoadmin, name = 'gotoadmin' ),
+    #path('cv/download/', views.downloadcv, name = 'downloadcv')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

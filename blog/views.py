@@ -3,6 +3,9 @@ from .models import BlogPost, CVElem
 from .forms import CvForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
+from django.contrib.staticfiles.storage import staticfiles_storage
+import mimetypes
+from django.http import HttpResponse
 
 # Create your views here.
 def mainpage(request):
@@ -89,3 +92,14 @@ def deleteelem(request, pk):
 
 def gotoadmin(request):
     return render(request,'blog/gotoadmin.html',{})
+
+'''def downloadcv(request):
+
+    fl_path = staticfiles_storage.path('CVPDF.pdf')
+    filename = 'CVPDF.pdf'
+
+    fl = open(fl_path, 'r')
+    mime_type, _ = mimetypes.guess_type(fl_path)
+    response = HttpResponse(fl, content_type=mime_type)
+    response['Content-Disposition'] = "attachment; filename=%s" % filename
+    return response'''
